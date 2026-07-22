@@ -149,13 +149,17 @@ clean patients and 43 columns after the following steps:
 | F1 Score | 0.79 | 0.26 |
 | Support | 18,066 | 2,283 |
 | Overall Accuracy | 67% | |
+| AUC-ROC Score | 0.6446 | |
 
 ### Why accuracy is 67% and not higher
 Individual feature correlations with readmission are modest — maximum 0.17 
 for number_inpatient. This is consistent with published healthcare research 
 on diabetic readmission and reflects the multifactorial nature of hospital 
 readmission where no single variable dominates. The model captures combined 
-feature interactions that individual correlations cannot reveal.
+feature interactions that individual correlations cannot reveal. 
+This is further supported by the model's AUC-ROC score of 0.6446, which is 
+consistent with published literature for clinical-only logistic regression 
+readmission models, typically reporting AUC values in the 0.60–0.75 range.
 
 ---
 
